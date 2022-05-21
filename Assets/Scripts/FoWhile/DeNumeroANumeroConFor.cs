@@ -36,7 +36,7 @@ public class DeNumeroANumeroConFor : MonoBehaviour
         }
         else if (numero1 > numero2)
         {
-            for (int i = numero2; i <= numero1; i--)
+            for (int i = numero1; i >= numero2; i--)
             {
                 Debug.Log(i);
             }
