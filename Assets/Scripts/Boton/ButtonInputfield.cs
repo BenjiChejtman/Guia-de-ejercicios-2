@@ -13,14 +13,7 @@ public class ButtonInputfield : MonoBehaviour
     }
 
     public void ButtonShowsInputfield()
-    {/*
-        if (inputfield.SetActive(false))
-        {
-            inputfield.SetActive(true);
-        }
-        if (inputfield.SetActive(true))
-        {
-            inputfield.SetActive(false);
-        }*/
+    {
+        inputfield.SetActive(!inputfield.activeInHierarchy);
     }
 }

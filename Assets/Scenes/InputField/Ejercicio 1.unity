@@ -246,7 +246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Aceptar
 --- !u!222 &838276016
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c4ad268ba5fe5449de6d0ffaedb1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textUI: {fileID: 1673702601}
+  textUI: {fileID: 1673702603}
 --- !u!4 &839618669
 Transform:
   m_ObjectHideFlags: 0
@@ -623,7 +623,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1439475643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 839618668}
+        m_MethodName: ShowMessageFromInputField
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1439475643
 MonoBehaviour:
   m_ObjectHideFlags: 0
