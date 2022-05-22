@@ -32,8 +32,8 @@ public class Instantiator : MonoBehaviour
     public void InstantaiteObjectToClone()
     {
         quantity = int.Parse(InputField.text);
-        
-        if (counter < quantity)                                         //falta poner los cubos restantes en el Text UI.
+
+        if (counter < quantity)                                         
         {
             Instantiate(ObjectToClone);
             counter++;
@@ -44,9 +44,15 @@ public class Instantiator : MonoBehaviour
         {
             error.text = txterror2;
         }
-        else
+        else if(InputField.text == "")
         {
             error.text = txterror;
         }
+
+        CubosRestantes.text = "Faltan " + (quantity - counter); //va despues de los ifs porque si los pongo antes
+                                                                //no va a tener de donde sacar la cantidad counter (creo)
+                                                                //PERO SE PONE SI O SI ABAJO DE TODO
+                                                                //¡EL CALCULO DE CUANTOS CUBOS FALTAN (O RESTANTES)
+                                                                //VA SIEMPRE ABAJO!
     }
 }

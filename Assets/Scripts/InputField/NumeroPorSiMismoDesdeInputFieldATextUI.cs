@@ -23,17 +23,18 @@ public class NumeroPorSiMismoDesdeInputFieldATextUI : MonoBehaviour
     }
 
     public void NumeroPorSiMismo()
-    {/*
+    {
         if (NumeroDesdeInputField.text != "")
         {
             num = int.Parse(NumeroDesdeInputField.text);
             res = num * num;
-            TextUI.text = res;
+            TextUI.text = "El resultado es " + res; //para mostrar un int en un TextUI
+                                                    //simplemente ponemos algo de texto y luego le sumamos el int, como en este caso ("..." + res  POR EJEMPLO)
         }
         else if (NumeroDesdeInputField.text == "")
         {
             Debug.Log("Error, ingrese algo en el inputfield.");
-        }*/
+        }
     }
     
 }
