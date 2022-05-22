@@ -47,7 +47,7 @@ public class Instantiator : MonoBehaviour
         else if(InputField.text == "")
         {
             error.text = txterror;
-        }
+        }   
 
         CubosRestantes.text = "Faltan " + (quantity - counter); //va despues de los ifs porque si los pongo antes
                                                                 //no va a tener de donde sacar la cantidad counter (creo)
